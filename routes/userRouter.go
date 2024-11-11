@@ -8,5 +8,5 @@ import (
 
 func UserRoutes(incomingRoutes *gin.Engine) {
 	incomingRoutes.GET("/users", controllers.Getusers)
-	incomingRoutes.GET("/users/:userId", controllers.Getuser)
+	incomingRoutes.GET("/users/:user_id", controllers.Getuser())
 }
